@@ -5,15 +5,11 @@ import { FeedbackOptions } from '../components/FeedbackOptions';
 
 import { Statistics } from '../components/Statistics';
 export class App extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      good: 0,
-      neutral: 0,
-      bad: 0,
-    };
-  }
+  state = {
+    good: 0,
+    neutral: 0,
+    bad: 0,
+  };
 
   onClickFeedback = option => {
     this.setState(prevState => ({
